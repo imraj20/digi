@@ -1,0 +1,210 @@
+{
+  "name": "website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^5.3.4",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "info": {
+    "_postman_id": "7e070bc1-a9ae-471e-b53a-b3ae1c1ea3cb",
+    "name": "Assigments API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "21989264"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://assignment.8848digitalerp.com/api/method/assignment.API.access_token.get_access_token?usr=administrator&pwd=Anand",
+          "protocol": "https",
+          "host": [
+            "assignment",
+            "8848digitalerp",
+            "com"
+          ],
+          "path": [
+            "api",
+            "method",
+            "assignment.API.access_token.get_access_token"
+          ],
+          "query": [
+            {
+              "key": "usr",
+              "value": "administrator"
+            },
+            {
+              "key": "pwd",
+              "value": "Anand"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "All Users",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "token 34a497ce9b9bde5:5af85706788f676",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://assignment.8848digitalerp.com/api/method/assignment.API.all_users_api.get_user",
+          "protocol": "https",
+          "host": [
+            "assignment",
+            "8848digitalerp",
+            "com"
+          ],
+          "path": [
+            "api",
+            "method",
+            "assignment.API.all_users_api.get_user"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Specific User",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "token 34a497ce9b9bde5:5af85706788f676",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name1\":\"Shyam\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://assignment.8848digitalerp.com/api/method/assignment.API.specific_user.get_specific",
+          "protocol": "https",
+          "host": [
+            "assignment",
+            "8848digitalerp",
+            "com"
+          ],
+          "path": [
+            "api",
+            "method",
+            "assignment.API.specific_user.get_specific"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update User",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "token 34a497ce9b9bde5:5af85706788f676",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"age\":28\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://assignment.8848digitalerp.com/api/resource/Assignment/Shyam",
+          "protocol": "https",
+          "host": [
+            "assignment",
+            "8848digitalerp",
+            "com"
+          ],
+          "path": [
+            "api",
+            "resource",
+            "Assignment",
+            "Shyam"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
